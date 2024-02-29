@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Drop_Down Menu</title>
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family:sans-serif;
+
+
+        }
+        body{
+            min-height: 100vh;
+            background: linear-gradient(45deg, #4e65ff, #92effd);
+            
+
+        }
+        .navigation{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 170px;
+            height: 70px;
+            background: #fff;
+            box-shadow:  0 25px 35px rgba(0, 0, 0, 0.255);
+
+
+        }
+        .navigation .userbx{
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: #fff;
+
+        }
+        .navigation .userbx .imgbx{
+            position: relative;
+            min-width: 60px;
+            height: 60px;
+            background: #000;
+            border-radius: 50%;
+            border: 10% solid #fff;
+
+            
+            
+
+        }
+        .navigation .userbx .imgbx img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+       
+
+    </style>
+</head>
+
+
+<body>
+    <div class="navigation">
+        <div class="userbx">
+            <div class="imgbx">
+            <img src="../Websites/img/img/logo5.jpeg">
+            <div class="MenuToggle">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

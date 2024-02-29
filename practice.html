@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Sticky Header Example</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .sticky-header {
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .sticky-header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+        }
+        
+        .sticky-header nav a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        
+        .sticky-header nav a:hover {
+            color: lightgray;
+        }
+        
+    </style>
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni magnam accusantium illum cumque alias beatae eligendi in vel hic deleniti reprehenderit, optio aperiam odio tenetur ducimus eveniet quo autem voluptatem? Illum amet quas voluptate quidem, consectetur fugit voluptas ipsa magni tempore sequi dolore optio quisquam minus at cumque, quae deserunt assumenda fugiat vero reprehenderit hic natus nam. Ipsum ullam fuga voluptates recusandae, accusamus, perspiciatis odit possimus reprehenderit perferendis maxime soluta provident animi! Magnam ullam maiores, tenetur maxime a eius nesciunt molestias temporibus dignissimos rem, adipisci modi ducimus est quasi natus sapiente illo tempora magni perspiciatis incidunt totam neque. Alias, debitis.
+    </div>
+</body>
+<script>
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('.sticky-header');
+        const scrollY = window.scrollY;
+    
+        if (scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+    
+</script>
+</html>
